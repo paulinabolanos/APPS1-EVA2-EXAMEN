@@ -1,0 +1,56 @@
+package com.example.eva2_examen_apps1;
+
+import android.app.Activity;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+
+import java.util.ArrayList;
+
+public class RestauranteAdapter extends ArrayAdapter<Restaurante> {
+    Context context;
+    int resource;
+    ArrayList<Restaurante> listRest;
+
+    public RestauranteAdapter(Context context, int resource, ArrayList<Restaurante> objects) {
+        super(context, resource, objects);
+        this.context = context;
+        this.resource = resource;
+        this.listRest = objects;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ImageView imgVwRes;
+        TextView txtVwNom, txtVwDesc, txtVwDir, txtVwTel;
+
+
+        //ConvertView es el layout que representa una fila en la lista
+        if (convertView == null){
+            //Crear nuestro Layout
+            //Inflater
+            LayoutInflater layoutInflater = ((Activity)context).getLayoutInflater();
+            convertView = layoutInflater.inflate(resource, parent, false);
+        }
+        imgVwRes = convertView.findViewById(R.id.imgVwRes);
+        txtVwNom = convertView.findViewById(R.id.txtVwNom);
+        txtVwDesc = convertView.findViewById(R.id.txtVwDesc);
+        txtVwDir = convertView.findViewById(R.id.txtVwDir);
+        txtVwTel = convertView.findViewById(R.id.txtVwTel);
+
+
+        imgVwRes.setImageResource(listRest.get(position).getImagen());
+        txtVwNom.setText(listRest.get(position).getNombre());
+        txtVwDesc.setText(listRest.get(position).getDescripcion());
+        txtVwDir.setText(listRest.get(position).getDireccion());
+        txtVwTel.setText(listRest.get(position).getTelefono());
+
+        return convertView;
+    }
+}

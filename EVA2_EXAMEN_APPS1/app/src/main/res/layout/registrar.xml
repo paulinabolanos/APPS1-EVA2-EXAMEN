@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Nombre:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre:" />
+
+    <EditText
+        android:id="@+id/edTxtNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese el nombre"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtVwDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción:" />
+
+    <EditText
+        android:id="@+id/edTxtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Describa el restaurante"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtVwDir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dirección:" />
+
+    <EditText
+        android:id="@+id/edTxtDir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ingrese la direccion"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtVwTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teléfono:" />
+
+    <EditText
+        android:id="@+id/edTxtTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint=" Ingrese el teléfono"
+        android:inputType="phone" />
+
+</LinearLayout>
