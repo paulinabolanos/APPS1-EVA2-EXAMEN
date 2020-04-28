@@ -12,20 +12,18 @@ import android.widget.Toast;
 
 public class Registrar extends AppCompatActivity implements ImageView.OnClickListener{
     EditText edTxtNom, edTxtDesc, edTxtDir, edTxtTel;
-    Button btnGuardar;
     ImageView imgVwRes;
 
     Restaurante res;
 
     int idRes;
 
-    private static final int REQUEST_CODE = 0;
+    int REQUEST_CODE = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar);
-        btnGuardar = findViewById(R.id.btnGuardar);
         edTxtNom = findViewById(R.id.edTxtNom);
         edTxtDesc = findViewById(R.id.edTxtDesc);
         edTxtDir = findViewById(R.id.edTxtDir);
@@ -39,14 +37,20 @@ public class Registrar extends AppCompatActivity implements ImageView.OnClickLis
     }
     public void onClickGuardar(View v){
         //imagen
-        Intent i = new Intent();
+        Intent intent = new Intent();
         res = new Restaurante(idRes, edTxtNom.getText().toString(), edTxtDesc.getText().toString(),
                 edTxtDir.getText().toString(), edTxtDir.getText().toString(),0);
         Bundle bundle = new Bundle();
         bundle.putSerializable("restaurante",res);
-        i.putExtras(bundle);
-        setResult(RESULT_OK,i);
+        intent.putExtras(bundle);
+        setResult(RESULT_OK,intent);
         finish();
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(this, Imagenes.class);
+        startActivityForResult(intent, REQUEST_CODE);
     }
 
     @Override
@@ -62,9 +66,5 @@ public class Registrar extends AppCompatActivity implements ImageView.OnClickLis
     }
 
 
-    @Override
-    public void onClick(View v) {
-        Intent i = new Intent(this, Imagenes.class);
-        startActivityForResult(i, REQUEST_CODE);
-    }
+
 }

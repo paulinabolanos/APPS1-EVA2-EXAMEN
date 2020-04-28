@@ -27,8 +27,9 @@ public class RestauranteAdapter extends ArrayAdapter<Restaurante> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ImageView imgVwRes;
+        ImageView imgVwRes, imgVwEs1, imgVwEs2, imgVwEs3;
         TextView txtVwNom, txtVwDesc, txtVwDir, txtVwTel;
+
 
 
         //ConvertView es el layout que representa una fila en la lista
@@ -43,6 +44,9 @@ public class RestauranteAdapter extends ArrayAdapter<Restaurante> {
         txtVwDesc = convertView.findViewById(R.id.txtVwDesc);
         txtVwDir = convertView.findViewById(R.id.txtVwDir);
         txtVwTel = convertView.findViewById(R.id.txtVwTel);
+        imgVwEs1 = convertView.findViewById(R.id.imgVwEs1);
+        imgVwEs2 = convertView.findViewById(R.id.imgVwEs2);
+        imgVwEs3 = convertView.findViewById(R.id.imgVwEs3);
 
 
         imgVwRes.setImageResource(listRest.get(position).getImagen());
@@ -50,7 +54,28 @@ public class RestauranteAdapter extends ArrayAdapter<Restaurante> {
         txtVwDesc.setText(listRest.get(position).getDescripcion());
         txtVwDir.setText(listRest.get(position).getDireccion());
         txtVwTel.setText(listRest.get(position).getTelefono());
-
+        switch(listRest.get(position).getCalificacion()){
+            case 1:
+                imgVwEs1.setBackgroundResource(R.drawable.estrellaA);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellaN);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellaN);
+                break;
+            case 2:
+                imgVwEs1.setBackgroundResource(R.drawable.estrellaA);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellaA);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellaN);
+                break;
+            case 3:
+                imgVwEs1.setBackgroundResource(R.drawable.estrellaA);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellaA);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellaA);
+                break;
+            default:
+                imgVwEs1.setBackgroundResource(R.drawable.estrellaN);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellaN);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellaN);
+                break;
+        }
         return convertView;
     }
 }

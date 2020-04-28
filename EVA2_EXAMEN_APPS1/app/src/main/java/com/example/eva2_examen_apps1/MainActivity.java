@@ -11,23 +11,22 @@ import android.widget.Button;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnVerRes, btnReRes;
-    int REQUEST_CODE = 11;
-    Intent i;
     ArrayList<Restaurante> listRes;
+    int REQUEST_CODE = 11;
+    Intent intent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnVerRes = findViewById(R.id.btnVerRes);
-        btnReRes = findViewById(R.id.btnReRes);
+        listRes = new ArrayList<>();
 
     }
 
     public void onClickRegistrar(View v){
-        i = new Intent(this,Registrar.class);
-        startActivityForResult(i,REQUEST_CODE);
+        intent = new Intent(this,Registrar.class);
+        startActivityForResult(intent,REQUEST_CODE);
     }
 
     @Override
@@ -43,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickMostrar(View v){
-        i = new Intent(this,Mostrar.class);
+        intent = new Intent(this,Mostrar.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable("lista",listRes);
-        i.putExtras(bundle);
-        startActivity(i);
+        intent.putExtras(bundle);
+        startActivity(intent);
 
     }
 

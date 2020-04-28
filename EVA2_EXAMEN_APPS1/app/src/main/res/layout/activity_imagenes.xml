@@ -18,6 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             app:srcCompat="@drawable/res1" />
 
         <ImageView
@@ -25,6 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             app:srcCompat="@drawable/res2" />
 
     </LinearLayout>
@@ -40,6 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             app:srcCompat="@drawable/res3" />
 
         <ImageView
@@ -47,6 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             app:srcCompat="@drawable/res4" />
     </LinearLayout>
 
@@ -61,6 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             app:srcCompat="@drawable/res5" />
 
         <ImageView
@@ -68,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             app:srcCompat="@drawable/res6" />
 
     </LinearLayout>
@@ -82,6 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             app:srcCompat="@drawable/res7" />
 
         <ImageView
@@ -89,6 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             app:srcCompat="@drawable/res8" />
     </LinearLayout>
 
@@ -103,6 +111,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             app:srcCompat="@drawable/res9" />
 
         <ImageView
@@ -110,6 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             app:srcCompat="@drawable/res10" />
     </LinearLayout>
 

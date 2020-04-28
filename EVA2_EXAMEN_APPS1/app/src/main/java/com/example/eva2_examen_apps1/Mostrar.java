@@ -36,7 +36,15 @@ public class Mostrar extends AppCompatActivity implements AdapterView.OnItemClic
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+        Intent intent = new Intent(this,Calificacion.class);
+        intent.putExtra("IMG",lista.get(i).getImagen());
+        intent.putExtra("NAME",lista.get(i).getNombre());
+        intent.putExtra("DESC",lista.get(i).getDescripcion());
+        intent.putExtra("DIR",lista.get(i).getDireccion());
+        intent.putExtra("TEL",lista.get(i).getTelefono());
+        intent.putExtra("CALIF",lista.get(i).getCalificacion());
+        intent.putExtra("I",i);
+        startActivityForResult(intent,1);
     }
 
     @Override

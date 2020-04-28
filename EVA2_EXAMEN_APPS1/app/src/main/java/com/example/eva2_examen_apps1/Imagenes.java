@@ -31,8 +31,8 @@ public class Imagenes extends AppCompatActivity implements ImageView.OnClickList
 
     @Override
     public void onClick(View v) {
-
         Intent intent = new Intent();
+
         switch (v.getId()){
             case R.id.imgVwRes1:
                 intent.putExtra("imagen",R.drawable.res1);

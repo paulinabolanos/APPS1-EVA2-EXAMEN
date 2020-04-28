@@ -17,6 +17,7 @@
         android:id="@+id/imgVwRes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
@@ -79,5 +80,6 @@
         android:id="@+id/btnGuardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickGuardar"
         android:text="GUARDAR" />
 </LinearLayout>

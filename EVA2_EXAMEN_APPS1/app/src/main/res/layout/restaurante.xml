@@ -41,4 +41,32 @@
             android:layout_height="wrap_content"
             android:text="TextView" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgVwEs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/estrellaN" />
+
+        <ImageView
+            android:id="@+id/imgVwEs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/estrellaN" />
+
+        <ImageView
+            android:id="@+id/imgVwEs3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/estrellaN" />
+    </LinearLayout>
 </LinearLayout>
