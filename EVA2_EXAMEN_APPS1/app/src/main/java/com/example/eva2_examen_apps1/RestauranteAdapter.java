@@ -56,24 +56,24 @@ public class RestauranteAdapter extends ArrayAdapter<Restaurante> {
         txtVwTel.setText(listRest.get(position).getTelefono());
         switch(listRest.get(position).getCalificacion()){
             case 1:
-                imgVwEs1.setBackgroundResource(R.drawable.estrellaA);
-                imgVwEs2.setBackgroundResource(R.drawable.estrellaN);
-                imgVwEs3.setBackgroundResource(R.drawable.estrellaN);
+                imgVwEs1.setBackgroundResource(R.drawable.estrellaa);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellan);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellan);
                 break;
             case 2:
-                imgVwEs1.setBackgroundResource(R.drawable.estrellaA);
-                imgVwEs2.setBackgroundResource(R.drawable.estrellaA);
-                imgVwEs3.setBackgroundResource(R.drawable.estrellaN);
+                imgVwEs1.setBackgroundResource(R.drawable.estrellaa);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellaa);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellan);
                 break;
             case 3:
-                imgVwEs1.setBackgroundResource(R.drawable.estrellaA);
-                imgVwEs2.setBackgroundResource(R.drawable.estrellaA);
-                imgVwEs3.setBackgroundResource(R.drawable.estrellaA);
+                imgVwEs1.setBackgroundResource(R.drawable.estrellaa);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellaa);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellaa);
                 break;
             default:
-                imgVwEs1.setBackgroundResource(R.drawable.estrellaN);
-                imgVwEs2.setBackgroundResource(R.drawable.estrellaN);
-                imgVwEs3.setBackgroundResource(R.drawable.estrellaN);
+                imgVwEs1.setBackgroundResource(R.drawable.estrellan);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellan);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellan);
                 break;
         }
         return convertView;

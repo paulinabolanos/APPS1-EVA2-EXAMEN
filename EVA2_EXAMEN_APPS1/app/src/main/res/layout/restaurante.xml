@@ -13,7 +13,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -53,20 +53,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/estrellaN" />
+            app:srcCompat="@drawable/estrellan" />
 
         <ImageView
             android:id="@+id/imgVwEs2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/estrellaN" />
+            app:srcCompat="@drawable/estrellan" />
 
         <ImageView
             android:id="@+id/imgVwEs3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/estrellaN" />
+            app:srcCompat="@drawable/estrellan" />
     </LinearLayout>
 </LinearLayout>

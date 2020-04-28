@@ -32,7 +32,7 @@ public class Calificacion extends AppCompatActivity implements ImageView.OnClick
         btnGuardar = findViewById(R.id.btnGuardar);
 
         intent = getIntent();
-        imgVwRes.setBackgroundResource(intent.getIntExtra("IMG",R.drawable.estrellaA));
+        imgVwRes.setBackgroundResource(intent.getIntExtra("IMG",R.drawable.estrellaa));
         txtVwNom.setText(intent.getStringExtra("NAME"));
         txtVwDesc.setText(intent.getStringExtra("DESC"));
         txtVwDir.setText(intent.getStringExtra("DIR"));
@@ -42,9 +42,9 @@ public class Calificacion extends AppCompatActivity implements ImageView.OnClick
             @Override
             public void onClick(View v) {
                 intent.getIntExtra("CALIF",1);
-                imgVwEs1.setBackgroundResource(R.drawable.estrellaA);
-                imgVwEs2.setBackgroundResource(R.drawable.estrellaN);
-                imgVwEs3.setBackgroundResource(R.drawable.estrellaN);
+                imgVwEs1.setBackgroundResource(R.drawable.estrellaa);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellan);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellan);
                 estrella = 1;
             }
         });
@@ -52,9 +52,9 @@ public class Calificacion extends AppCompatActivity implements ImageView.OnClick
             @Override
             public void onClick(View v) {
                 intent.getIntExtra("CALIF",2);
-                imgVwEs1.setBackgroundResource(R.drawable.estrellaA);
-                imgVwEs2.setBackgroundResource(R.drawable.estrellaA);
-                imgVwEs3.setBackgroundResource(R.drawable.estrellaN);
+                imgVwEs1.setBackgroundResource(R.drawable.estrellaa);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellaa);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellan);
                 estrella = 2;
             }
         });
@@ -62,9 +62,9 @@ public class Calificacion extends AppCompatActivity implements ImageView.OnClick
             @Override
             public void onClick(View v) {
                 intent.getIntExtra("CALIF",3);
-                imgVwEs1.setBackgroundResource(R.drawable.estrellaA);
-                imgVwEs2.setBackgroundResource(R.drawable.estrellaA);
-                imgVwEs3.setBackgroundResource(R.drawable.estrellaA);
+                imgVwEs1.setBackgroundResource(R.drawable.estrellaa);
+                imgVwEs2.setBackgroundResource(R.drawable.estrellaa);
+                imgVwEs3.setBackgroundResource(R.drawable.estrellaa);
                 estrella = 3;
             }
         });
