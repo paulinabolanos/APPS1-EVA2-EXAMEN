@@ -8,42 +8,73 @@
     tools:context=".Registrar">
 
     <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Registrar Restaurante"
+        android:textColor="#2196F3"
+        android:textSize="24sp" />
+
+    <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Capturar imagen:" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:text="Capturar imagen:"
+        android:textColor="#2196F3"
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/imgVwRes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="310dp"
+        android:layout_height="189dp"
+        android:layout_marginLeft="50dp"
         android:onClick="onClick"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/addimg" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre:" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:text="Nombre:"
+        android:textColor="#2196F3"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/edTxtNom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:ems="10"
         android:hint="Ingrese el nombre:"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColorLink="#A8E75D" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Descripción:" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:text="Descripción:"
+        android:textColor="#2196F3"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/edTxtDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:ems="10"
         android:hint="Ingrese la descripción:"
         android:inputType="textPersonName" />
@@ -52,12 +83,19 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dirección:" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:text="Dirección:"
+        android:textColor="#2196F3"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/edTxtDir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:ems="10"
         android:hint="Ingrse la dirección:"
         android:inputType="textPersonName" />
@@ -66,12 +104,19 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Teléfono:" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:text="Teléfono:"
+        android:textColor="#2196F3"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/edTxtTel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:ems="10"
         android:hint="Ingrese el teléfono:"
         android:inputType="phone" />
@@ -80,6 +125,13 @@
         android:id="@+id/btnGuardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_redondo"
         android:onClick="onClickGuardar"
-        android:text="GUARDAR" />
+        android:text="GUARDAR"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 </LinearLayout>
